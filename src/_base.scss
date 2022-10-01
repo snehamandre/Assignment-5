@@ -1,0 +1,35 @@
+
+/*Basic */
+
+body{
+    font-family: $font ;
+    font-size:1em;
+    line-height:2em;
+    background:$background-img $white-color repeat-x;
+    margin:0;
+}
+
+main  {
+    @include size(940px, auto);
+    margin:0 auto;
+    padding:0 10px;
+    @include break ($small-screen){
+        width:300px;
+    }
+    @include break ($medium-screen){
+        width:460px;
+    }
+    @include break ($large-screen) {
+        width:768px;  
+    }
+}
+
+article {
+    img {
+        @include break ($small-screen){
+            display:none;
+        }
+    }
+}
+
+

@@ -1,0 +1,36 @@
+
+@mixin header($color, $weight, $size, $height ){
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+@mixin size($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin logo($pic){
+    background: $pic no-repeat 0 50px;
+    float:left;
+    display:block;
+    margin:0;
+}
+
+@mixin content_area($color, $size, $weight) {
+    color: $color ;
+    font-size:$size;
+    font-weight: $weight;
+}
+@mixin footer ($bgcolor, $algn, $color, $pad-top) {
+    background: $dark-grey-color;
+    text-align:center;
+    color: $white-color;
+    padding-top:50px;
+}
+@mixin break($ln) {
+    @media screen and (max-width: $ln){
+        @content;
+    }
+}
+

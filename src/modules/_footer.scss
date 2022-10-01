@@ -1,0 +1,58 @@
+/* Footer with math query */
+
+.greybar{
+    @include size (100%, 90px);
+    background: $off-white-color;
+    clear:both;
+    padding-top:30px;
+    @include break ($small-screen) {
+        display:none;   
+    }
+}
+
+footer  
+{
+    @include size (100%, 120px);
+    @include footer ($dark-grey-color, center, $white-color, 50px);
+    @include break ($small-screen) {
+        text-align:center;
+    }
+    p {
+        @include break ($small-screen) {
+            float:none;margin:0;
+        }
+    }
+    img  {
+        @include break ($small-screen){
+            float:none;margin:0;
+        }  
+    }
+}
+
+.social-media{
+    margin:0 auto;
+    @include size(165px, auto);
+    div{
+        float:left;
+        margin-right:5px;
+    }
+    a {
+        @include size(36px, 36px);
+        text-indent:-9999px;
+        display:block;
+    }
+
+/* Math Querry */
+   div.one{
+    background: $social-media-img (0*38) 0;
+   }
+   div.two{
+    background: $social-media-img (-1*38px) 0;
+   }
+   div.three{
+    background: $social-media-img  (-2*38px) 0;
+   }
+   div.four{
+    background: $social-media-img (-3*38px)  0;
+   }
+}
