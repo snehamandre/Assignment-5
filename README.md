@@ -2,10 +2,10 @@
 
 ###Run below commands
 
-npm init -y
-npm install gulp-cli -g
-npm install gulp -D
-npx -p touch nodetouch gulpfile.js
-gulp --help
-npm install node-sass gulp-sass --save-dev
-npx gulp
+1. npm init -y
+2. npm install gulp-cli -g
+3. npm install gulp -D
+4. npx -p touch nodetouch gulpfile.js
+5. gulp --help
+6. npm install node-sass gulp-sass --save-dev
+7. npx gulp
